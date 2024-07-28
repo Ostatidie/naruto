@@ -4,7 +4,7 @@ import CharacterList from './CharacterList'
 function App() {
   return (
     <>
-    <CharacterList />
+      <CharacterList />
     </>
   );
 }

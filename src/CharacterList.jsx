@@ -1,9 +1,5 @@
 import Character from "./Character"
 
-function CharacterList() {
-    function foo() {
-        alert("you clicked button")
-}
 const data =[
     {
         name: "Naruto Uzumaki", 
@@ -30,20 +26,19 @@ const data =[
         imgLink:"https://i.pinimg.com/736x/1c/9a/50/1c9a50f5f218aad0696a4cdc40b12af3.jpg",
     }
 ]
+
+function CharacterList() {
     return (
         <>
-        <Character
-        name='diego'
-        />
-         {data.map((Character)=> 
+         {data.map((Char)=> 
             <Character 
-            name={Character.name} 
-            clan={Character.clan}
-            title={Character.title}
-            description={Character.description} 
-            clanLogo={Character.clanLogo}
-            imgLink = {Character.imgLink}
-            button={foo} 
+            name={Char.name} 
+            clan={Char.clan}
+            title={Char.title}
+            description={Char.description} 
+            clanLogo={Char.clanLogo}
+            imgLink = {Char.imgLink}
+            // button={foo} 
             />
        )} 
         </>
