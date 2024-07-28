@@ -1,5 +1,10 @@
 import Character from "./Character"
 
+
+function foo(){
+    alert("clicked")
+}
+
 const data =[
     {
         name: "Naruto Uzumaki", 
@@ -38,7 +43,7 @@ function CharacterList() {
             description={Char.description} 
             clanLogo={Char.clanLogo}
             imgLink = {Char.imgLink}
-            // button={foo} 
+            button={foo} 
             />
        )} 
         </>
